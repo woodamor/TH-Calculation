@@ -1,4 +1,4 @@
-
+# -*- coding: UTF-8 -*-
 
 class Soil_layer:
     def __init__(self, name):
@@ -23,17 +23,15 @@ class Soil_layer:
     # 待增加
     
 class Borhole:
-
-    soil_layers = []
-
     def __init__(self, name):
         self.__name = name  
+        self.layers = []
 
     def get_name(self):
         return self.__name
     
     def insert_soil_layer(self, soil_layer):
-        self.soil_layers.append(soil_layer)
+        self.layers.append(soil_layer)
 
     # 待增加
 
@@ -45,5 +43,5 @@ if __name__ == '__main__':
     hole_1.insert_soil_layer(layer_1)
     hole_1.insert_soil_layer(layer_2)
 
-    for i in hole_1.soil_layers:
+    for i in hole_1.layers:
         print(i.get_name())

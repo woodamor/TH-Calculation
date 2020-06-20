@@ -1,6 +1,4 @@
 README
 
-nothing
-zhoudi   is  sb
-a ha 
-666666
+单桩桩长计算工具。
+根据规范计算钻孔灌注桩的摩擦桩和嵌岩桩。
