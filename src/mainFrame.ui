@@ -81,12 +81,12 @@
         <x>280</x>
         <y>30</y>
         <width>251</width>
-        <height>301</height>
+        <height>320</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_5">
        <item row="7" column="1" colspan="2">
-        <widget class="QTextEdit" name="textEdit_min_depth_2">
+        <widget class="QTextEdit" name="textEdit_min_depth">
          <property name="maximumSize">
           <size>
            <width>250</width>
@@ -125,7 +125,7 @@ p, li { white-space: pre-wrap; }
         </widget>
        </item>
        <item row="1" column="1" colspan="2">
-        <widget class="QTextEdit" name="textEdit_fos_ub_2">
+        <widget class="QTextEdit" name="textEdit_fos_ub">
          <property name="enabled">
           <bool>true</bool>
          </property>
@@ -179,7 +179,7 @@ p, li { white-space: pre-wrap; }
         </widget>
        </item>
        <item row="3" column="1" colspan="2">
-        <widget class="QTextEdit" name="textEdit_roundup_level_2">
+        <widget class="QTextEdit" name="textEdit_roundup_level">
          <property name="maximumSize">
           <size>
            <width>250</width>
@@ -256,7 +256,7 @@ p, li { white-space: pre-wrap; }
         </widget>
        </item>
        <item row="4" column="1" colspan="2">
-        <widget class="QTextEdit" name="textEdit_threshold_2">
+        <widget class="QTextEdit" name="textEdit_threshold">
          <property name="maximumSize">
           <size>
            <width>250</width>
@@ -279,7 +279,7 @@ p, li { white-space: pre-wrap; }
         </widget>
        </item>
        <item row="2" column="1" colspan="2">
-        <widget class="QTextEdit" name="textEdit_gamma_2">
+        <widget class="QTextEdit" name="textEdit_gamma">
          <property name="maximumSize">
           <size>
            <width>250</width>
@@ -302,7 +302,7 @@ p, li { white-space: pre-wrap; }
         </widget>
        </item>
        <item row="0" column="1" colspan="2">
-        <widget class="QTextEdit" name="textEdit_fos_lb_2">
+        <widget class="QTextEdit" name="textEdit_fos_lb">
          <property name="maximumSize">
           <size>
            <width>250</width>
@@ -325,7 +325,7 @@ p, li { white-space: pre-wrap; }
         </widget>
        </item>
        <item row="8" column="2">
-        <widget class="QTextEdit" name="textEdit_dsg_anchor_depth_2">
+        <widget class="QTextEdit" name="textEdit_dsg_anchor_depth">
          <property name="maximumSize">
           <size>
            <width>250</width>
@@ -367,7 +367,7 @@ p, li { white-space: pre-wrap; }
         </widget>
        </item>
        <item row="6" column="1" colspan="2">
-        <widget class="QTextEdit" name="textEdit_min_capacity_2">
+        <widget class="QTextEdit" name="textEdit_min_capacity">
          <property name="maximumSize">
           <size>
            <width>250</width>
@@ -425,7 +425,7 @@ p, li { white-space: pre-wrap; }
         </widget>
        </item>
        <item row="5" column="1" colspan="2">
-        <widget class="QTextEdit" name="textEdit_consider_negative_2">
+        <widget class="QTextEdit" name="textEdit_consider_negative">
          <property name="maximumSize">
           <size>
            <width>250</width>
@@ -507,7 +507,7 @@ p, li { white-space: pre-wrap; }
        <string>计算参数</string>
       </property>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>230</x>
@@ -559,7 +559,7 @@ p, li { white-space: pre-wrap; }
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -1005,7 +1005,7 @@ p, li { white-space: pre-wrap; }
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>220</x>
@@ -1095,7 +1095,7 @@ p, li { white-space: pre-wrap; }
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>450</x>
@@ -1176,11 +1176,6 @@ p, li { white-space: pre-wrap; }
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="actiontest">
-   <property name="text">
-    <string>test</string>
-   </property>
-  </action>
  </widget>
  <resources/>
  <connections>
@@ -1197,54 +1192,6 @@ p, li { white-space: pre-wrap; }
     <hint type="destinationlabel">
      <x>299</x>
      <y>239</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>push_btn_save</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>fileDiaSave()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>456</x>
-     <y>438</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>576</x>
-     <y>363</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>push_btn_load</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>fileDiaLoad()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>525</x>
-     <y>448</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>579</x>
-     <y>321</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>push_btn_new</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>fileDiaNew()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>285</x>
-     <y>446</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>581</x>
-     <y>265</y>
     </hint>
    </hints>
   </connection>

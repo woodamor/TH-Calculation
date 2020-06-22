@@ -3,7 +3,7 @@ from PyQt5.QtCore import QDate, QFile, QFileInfo, QIODevice, QDataStream
 
 # 桩基基本信息
 class PileInfo(object):
-    def __init__(self, label = "", diameter = 0, top_elev = 0.0, design_load = 0.0):
+    def __init__(self, label = "1#", diameter = 0, top_elev = 0.0, design_load = 0.0):
         self.label = label
         self.diameter = diameter
         self.top_elev = top_elev
